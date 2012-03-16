@@ -33,7 +33,7 @@ module Prawnto
       end
 
       def cleaned_path(provided_partial_path)
-        *provided_path, file_name = provided_partial_path.split("/")
+        provided_path, file_name = provided_partial_path.split("/")
         file_name = "_"+file_name unless file_name[0] == "_"
         File.join(provided_path, file_name)
       end
